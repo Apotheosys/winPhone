@@ -77,7 +77,7 @@
                              <GradientStopCollection>
                                 <GradientStop Color="Black" Offset="0.2"/>
                                 <GradientStop Color="AliceBlue" Offset="0.4"/>
-                                <GradientStop Color="#6AB0EE" Offset="0.6"/>
+                                <GradientStop Color="#6AB0FE" Offset="0.6"/>
                                  <GradientStop Color="White" Offset="0.8"/>
                              </GradientStopCollection>
                         </LinearGradientBrush>
