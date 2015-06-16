@@ -1,0 +1,15 @@
+C:\Users\Ognjen\Desktop\Arcadia\Mobile\Percentage\Percentage\Bin\Debug\ApplicationIcon.png
+C:\Users\Ognjen\Desktop\Arcadia\Mobile\Percentage\Percentage\Bin\Debug\Background.png
+C:\Users\Ognjen\Desktop\Arcadia\Mobile\Percentage\Percentage\Bin\Debug\Percentage.dll
+C:\Users\Ognjen\Desktop\Arcadia\Mobile\Percentage\Percentage\Bin\Debug\Percentage.pdb
+C:\Users\Ognjen\Desktop\Arcadia\Mobile\Percentage\Percentage\Bin\Debug\AppManifest.xaml
+C:\Users\Ognjen\Desktop\Arcadia\Mobile\Percentage\Percentage\Bin\Debug\Percentage.xap
+C:\Users\Ognjen\Desktop\Arcadia\Mobile\Percentage\Percentage\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Ognjen\Desktop\Arcadia\Mobile\Percentage\Percentage\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Ognjen\Desktop\Arcadia\Mobile\Percentage\Percentage\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ognjen\Desktop\Arcadia\Mobile\Percentage\Percentage\obj\Debug\App.g.i.cs
+C:\Users\Ognjen\Desktop\Arcadia\Mobile\Percentage\Percentage\obj\Debug\MainPage.g.i.cs
+C:\Users\Ognjen\Desktop\Arcadia\Mobile\Percentage\Percentage\obj\Debug\Percentage.g.resources
+C:\Users\Ognjen\Desktop\Arcadia\Mobile\Percentage\Percentage\obj\Debug\Percentage.dll
+C:\Users\Ognjen\Desktop\Arcadia\Mobile\Percentage\Percentage\obj\Debug\Percentage.pdb
+C:\Users\Ognjen\Desktop\Arcadia\Mobile\Percentage\Percentage\obj\Debug\XapCacheFile.xml

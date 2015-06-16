@@ -1,0 +1,95 @@
+﻿<Application
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+	xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls" mc:Ignorable="d"
+	x:Class="Tip_Of_The_Day.App">
+
+	<!--Application Resources-->
+	<Application.Resources>
+		<Style x:Key="ButtonStyle1" TargetType="Button">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="Button">
+						<Grid>
+							<VisualStateManager.VisualStateGroups>
+								<VisualStateGroup x:Name="CommonStates">
+									<VisualStateGroup.Transitions>
+										<VisualTransition GeneratedDuration="0:0:4" To="Normal">
+											<VisualTransition.GeneratedEasingFunction>
+												<ElasticEase EasingMode="EaseInOut"/>
+											</VisualTransition.GeneratedEasingFunction>
+											<Storyboard>
+												<DoubleAnimation Duration="0" To="1" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="baseLayer" d:IsOptimized="False"/>
+											</Storyboard>
+										</VisualTransition>
+									</VisualStateGroup.Transitions>
+								</VisualStateGroup>
+							</VisualStateManager.VisualStateGroups>
+							<Rectangle x:Name="baseLayer" Stroke="Black" RadiusX="20" RadiusY="20" StrokeThickness="5" Opacity="1">
+								<Rectangle.Fill>
+									<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+										<GradientStop Color="White" Offset="0"/>
+										<GradientStop Color="Black" Offset="0.1"/>
+										<GradientStop Color="White" Offset="1"/>
+									</LinearGradientBrush>
+								</Rectangle.Fill>
+							</Rectangle>
+							<ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+						</Grid>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="Background">
+				<Setter.Value>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="Black" Offset="0.099"/>
+						<GradientStop Color="White" Offset="1"/>
+						<GradientStop Color="White" Offset="0.017"/>
+					</LinearGradientBrush>
+				</Setter.Value>
+			</Setter>
+		</Style>
+		<Style x:Key="LayoutRootStyle" TargetType="Grid">
+			<Setter Property="Background">
+				<Setter.Value>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="Black" Offset="1"/>
+						<GradientStop Color="White"/>
+						<GradientStop Color="#FF080909" Offset="0.03"/>
+					</LinearGradientBrush>
+				</Setter.Value>
+			</Setter>
+		</Style>
+        <DataTemplate x:Key="MyPanoramaItemHeaderTemplate">
+            <Grid>
+                <ContentPresenter>
+                    <TextBlock Text="{Binding}" FontSize="20" />
+                </ContentPresenter>
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="MyPanoramaTitleTemplate">
+            <ContentPresenter>
+                <TextBlock Text="{Binding}" FontSize="50" Margin="0,70,0,0" HorizontalAlignment="Center" FontFamily="DengXian">
+                    <TextBlock.Foreground>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" >
+                             <GradientStopCollection>
+                                <GradientStop Color="Black" Offset="0.2"/>
+                                <GradientStop Color="AliceBlue" Offset="0.4"/>
+                                <GradientStop Color="#6AB0EE" Offset="0.6"/>
+                                 <GradientStop Color="White" Offset="0.8"/>
+                             </GradientStopCollection>
+                        </LinearGradientBrush>
+                       </TextBlock.Foreground>
+                </TextBlock>
+            </ContentPresenter>
+        </DataTemplate>
+    </Application.Resources>
+	<Application.ApplicationLifetimeObjects>
+		<!--Required object that handles lifetime events for the application-->
+		<shell:PhoneApplicationService 
+			Launching="Application_Launching" Closing="Application_Closing" 
+			Activated="Application_Activated" Deactivated="Application_Deactivated"/>
+	</Application.ApplicationLifetimeObjects>
+</Application>
